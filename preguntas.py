@@ -50,8 +50,7 @@ def pregunta_03():
     Name: _c1, dtype: int64
 
     """
-    return tbl0['_c1'].value_counts()
-
+    return tbl0.groupby('_c1').size()
 
 def pregunta_04():
     """
